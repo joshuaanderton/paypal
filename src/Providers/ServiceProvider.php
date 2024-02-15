@@ -1,6 +1,6 @@
 <?php
 
-namespace Ja\PayPalCheckout\Providers;
+namespace Ja\PayPal\Providers;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 

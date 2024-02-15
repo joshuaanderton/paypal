@@ -1,5 +1,5 @@
 {
-  "name": "joshuaanderton/paypal-checkout",
+  "name": "joshuaanderton/paypal",
   "description": "PayPal Checkout for Laravel + Inertia.js",
   "license": "MIT",
   "authors": [
@@ -13,12 +13,12 @@
   },
   "autoload": {
       "psr-4": {
-          "Ja\\PayPalCheckout\\": "src"
+          "Ja\\PayPal\\": "src"
       }
   },
   "autoload-dev": {
       "psr-4": {
-          "Ja\\PayPalCheckout\\Tests\\": "tests"
+          "Ja\\PayPal\\Tests\\": "tests"
       }
   },
   "config": {
@@ -27,7 +27,7 @@
   "extra": {
       "laravel": {
           "providers": [
-              "Ja\\PayPalCheckout\\Providers\\ServiceProvider"
+              "Ja\\PayPal\\Providers\\ServiceProvider"
           ]
       }
   }
