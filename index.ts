@@ -14,7 +14,6 @@ export default () => ({
 
     config.resolve.alias = {
       ...(config.resolve.alias || {}),
-      '@': path.resolve('resources/js'),
       '@ja/paypal': path.resolve(`${__dirname}/resources/js`),
     }
 
