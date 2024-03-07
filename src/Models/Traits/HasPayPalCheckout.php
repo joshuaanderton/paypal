@@ -65,7 +65,7 @@ trait HasPayPalCheckout
         }
 
         $url = env('PAYPAL_API_URL');
-        $customer = $this->user ?? $this->visitor;
+        $customer = $this->user ?? $this->customer;
         $address = $this->billingAddress ?? $this->shippingAddress;
 
         $response = (
