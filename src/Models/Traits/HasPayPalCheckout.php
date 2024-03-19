@@ -90,8 +90,8 @@ trait HasPayPalCheckout
                             'admin_area_1' => $address->state,
                             'postal_code' => $address->postal_code,
                             'country_code' => $address->country,
-                        ]
-                    ]
+                        ],
+                    ],
                     // 'items' => []
                 ]],
                 'payment_source' => [
@@ -104,16 +104,16 @@ trait HasPayPalCheckout
                             'shipping_preference' => 'SET_PROVIDED_ADDRESS',
                             'user_action' => 'PAY_NOW',
                             'return_url' => route('cart'),
-                            'cancel_url' => route('cart')
-                        ]
-                    ]
+                            'cancel_url' => route('cart'),
+                        ],
+                    ],
                 ],
                 // 'payee' => [
                 //     'email_address' => '',
                 //     'merchant_id' => '',
                 // ],
             ])
-            ->throw()
+                ->throw()
         );
 
         $this->paypal_order_id = $response['id'];
