@@ -20,7 +20,7 @@ const PayPalButton: React.FC<Props> = ({ currency, onCreateOrder, onCaptureOrder
   return (
     <div className={className}>
       <PayPalScriptProvider options={initialOptions}>
-        <div className="flex flex-col items-stretch [&>div]:flex [&>div]:flex-col w-full rounded-[12px] overflow-hidden">
+        <div className="flex flex-col items-stretch [&>div]:flex bg-[#FFC43A] hover:bg-[#F3BA38] [&>div]:flex-col w-full rounded-[0] overflow-hidden">
           <PayPalButtons
             style={{
               shape: "rect",
